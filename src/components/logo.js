@@ -1,13 +1,14 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx } from 'theme-ui';
+import { jsx,Image } from 'theme-ui';
 import { Link } from 'components/link';
 import LogoSvg from 'components/icons/logo';
+import LogoPng from 'assets/images/os_logo.png'
 
 export default function Logo({ isSticky, footer, ...props }) {
   return (
     <Link path="/" sx={styles.logo} {...props}>
-      <LogoSvg />
+      <Image src={LogoPng} sx={{ display: 'flex' }} width ="150"alt="startup landing logo" />
     </Link>
   );
 }

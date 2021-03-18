@@ -12,8 +12,10 @@ const Banner = () => {
         <Box sx={styles.contentWrapper}>
           <SectionHeading
             sx={styles.heading}
-            title="Creativity starts with viewing the whole world differently"
-            description="A service agency with customer satisfaction"
+            title="We Are a Content Marketing Agency
+            "
+            description="Offering online marketing services that drive results for your brand
+            "
           />
           <Box as="figure" sx={styles.illustration}>
             <Box sx={styles.buttonWrapper}>

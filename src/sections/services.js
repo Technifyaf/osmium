@@ -12,19 +12,19 @@ const data = [
   {
     id: 1,
     icon: icon1,
-    title: 'Marketing & advertising',
+    title: 'Creative and visual design',
     description: `Get your info tests delivered at home collect a sample from the your progress tests.`,
   },
   {
     id: 3,
     icon: icon2,
-    title: 'Ultimate development',
+    title: 'Corporate Identity',
     description: `Get your info tests delivered at home collect a sample from the your progress tests.`,
   },
   {
     id: 4,
     icon: icon3,
-    title: 'Business Enterprise',
+    title: 'Social Media ',
     description: `Get your info tests delivered at home collect a sample from the your progress tests.`,
   },
 ];
@@ -35,7 +35,7 @@ const Services = () => {
       <Container>
         <SectionHeading
           sx={styles.heading}
-          title="Grow your startup with our Service"
+          title="Grow your brand with our services"
           description="Build an incredible workplace and grow your business with Gusto’s all-in-one platform with amazing contents."
         />
         <Box sx={styles.contentWrapper}>

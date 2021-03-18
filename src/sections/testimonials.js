@@ -9,35 +9,40 @@ import google from 'assets/images/logos/google.png';
 import paypal from 'assets/images/logos/paypal.png';
 import microsoft from 'assets/images/logos/microsoft.png';
 import dribbble from 'assets/images/logos/dribbble.png';
+import bedco from 'assets/images/logos/bedco.jpg'
+import blackhair from 'assets/images/logos/blackhair.png'
+import clientcare from 'assets/images/logos/clientcare.png'
+import higherself from 'assets/images/logos/higherself.png'
+import limomonane from 'assets/images/logos/limomonane.png'
 
 const data = [
   {
     id: 1,
-    logo: uber,
+    logo: bedco,
     author: 'By Denny Albuz, Adviser of Paypal',
     quote: `“Whatever we create in Qwilr looks absolutely brilliant. It helps show our work in the best light, and is downright impressive when clients see a Qwilr Page we have made for them.”`,
   },
   {
     id: 2,
-    logo: google,
+    logo: blackhair,
     author: 'By Denny Albuz, Adviser of Paypal',
     quote: `“Qwilr Page we have made for them. Whatever we create in Qwilr looks absolutely brilliant. It helps show our work in the best light, and is downright impressive when clients see a”`,
   },
   {
     id: 3,
-    logo: paypal,
+    logo: clientcare,
     author: 'By Denny Albuz, Adviser of Paypal',
     quote: `“Whatever we create in Qwilr looks absolutely brilliant. It helps show our work in the best light, and is downright impressive when clients see a Qwilr Page we have made for them.”`,
   },
   {
     id: 4,
-    logo: microsoft,
+    logo: higherself,
     author: 'By Denny Albuz, Adviser of Paypal',
     quote: `“Qwilr Page we have made for them. Whatever we create in Qwilr looks absolutely brilliant. It helps show our work in the best light, and is downright impressive when clients see a”`,
   },
   {
     id: 5,
-    logo: dribbble,
+    logo: limomonane,
     author: 'By Denny Albuz, Adviser of Paypal',
     quote: `“Whatever we create in Qwilr looks absolutely brilliant. It helps show our work in the best light, and is downright impressive when clients see a Qwilr Page we have made for them.”`,
   },
@@ -53,7 +58,7 @@ const Testimonials = () => {
           tabPosition="bottom"
         >
           {data?.map((item) => (
-            <TabPane key={item.id} tab={<Image src={item.logo} alt="logo" />}>
+            <TabPane key={item.id} tab={<Image src={item.logo} alt="logo" width ="120" />}>
               <Box as="blockquote">
                 {item.quote}
                 <Text as="span" sx={styles.author}>
@@ -72,7 +77,7 @@ export default Testimonials;
 
 const styles = {
   section: {
-    backgroundColor: rgba('#FFF5ED', 0.5),
+    backgroundColor: rgba('#FFFFFF', 0.5),
     pt: [7, null, null, 9, null, 10, 11],
     pb: [9, null, null, 10, 11],
   },
